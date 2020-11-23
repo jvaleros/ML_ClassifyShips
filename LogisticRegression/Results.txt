@@ -1,0 +1,10 @@
+Results for Logistic Regression
+average error: 0.7019666666666666 (0.3625389159187681)
+[[102 790]
+ [  0 308]]
+Accuracy : 0.3416666666666667
+Class 0 Precision : 0.11434977578475336
+Class 1 Precision : 1.0
+Recall : 1.0
+
+(0.3416666666666667, 0.11434977578475336, 1.0, 1.0)
