@@ -6,12 +6,14 @@
 ## Machine Learning Models
 ### CNN
 ### Logistic Regression(LR)
-Here is a summary of the performance of the LR model on this dataset.
-| Accuracy     | Average Error    |  Class 0 Precision   | Class 1 Precision| Recall |
-| :------------- | :----------: | -----------: || -----------: || -----------: |
-|  0.88 | 0.407279 | 0.886389   | 0.861736 | 0.861736 |
+Here is a summary of the performance of the LR model on this dataset:
+
+| Accuracy | Average Error | Class 0 Precision | Class 1 Precision | Recall |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+| 0.88 | 0.407279 | 0.886389 | 0.861736 | 0.861736 |
+
 ### SVM
 ## Authors
-Max Ramacher
-Sean Tonthat
-Jaime Valero
+Max Ramacher \
+Sean Tonthat \
+Jaime Valero 
