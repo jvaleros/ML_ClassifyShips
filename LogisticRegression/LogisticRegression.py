@@ -27,7 +27,7 @@ Y = data['labels']
 
 X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.3)
 
-X_train = preprocessing.scale(X_train)
+# X_train = preprocessing.scale(X_train)
 logreg = LogisticRegression(max_iter=100000)
 logreg.fit(X_train, Y_train)
 
