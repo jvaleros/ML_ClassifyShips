@@ -14,7 +14,8 @@ from keras.applications.vgg19 import VGG19
 from keras.preprocessing import image
 from keras.applications.vgg19 import preprocess_input
 from keras.models import Model
-import numpy as np
+from keras.utils import to_categorical 
+from skimage.util import random_noise
 
 # Open Data Set
 
@@ -31,28 +32,28 @@ X = np.asarray(data['data']).astype('uint8')
 Y = data['labels'] 
 
 X = X / 255.
-X = X.reshape([-1, 3, 80, 80]).transpose([0,2,3,1])
 
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.3)
+
+X_train = random_noise(X_train, mode='gaussian', var=0.05**2)
+X_train = (255*X_train).astype(np.uint8)
+X_train = X_train.reshape([-1, 3, 80, 80]).transpose([0,2,3,1])
+X_test = X_test.reshape([-1, 3, 80, 80]).transpose([0,2,3,1])
 # get the features 
-features = model.predict(X)
+features = model.predict(X_train)
+features_flatten = features.reshape((features.shape[0], 5 * 5 * 512))
 
-pretrained = np.asarray(features[:,0,0])
-pretrained.shape
-#print(pretrained)
-#print(Shipsnet.head())
-#print(Shipsnet.shape)
-#Shipsnet['labels'].value_counts()
-
-X_train,X_test,Y_train,Y_test = train_test_split(pretrained,Y,test_size = 0.3)
-
-#X_train = preprocessing.scale(X_train)
-logreg = LogisticRegression(max_iter=100000)
-logreg.fit(X_train, Y_train)
-
+X_test_features = model.predict(X_test)
+X_test_flatten = X_test_features.reshape((X_test_features.shape[0], 5 * 5 * 512))
+#X_test = preprocessing.scale(X_test)
+logreg = LogisticRegression(max_iter=10000,fit_intercept=True)
+logreg.fit(features_flatten, Y_train)
 # Evaluation and Performance of ML Model
-y_pred = logreg.predict(X_test)
+y_pred = logreg.predict(X_test_flatten)
+#score = logreg.score(y_pred, Y_test)
+#print(score)
 yHat = sum(y_pred)/len(X_test)
-score = logreg.score(X_test,Y_test)
+#score = logreg.score(X_test,Y_test)
 print('Results for Logistic Regression')
 YtestDiff = np.abs(yHat - Y_test)
 avgErr = np.mean(YtestDiff)
@@ -73,3 +74,8 @@ def func_calConfusionMatrix(predY, trueY):
     return accuracy,precisiontn,precisiontp, recall
 
 func_calConfusionMatrix(y_pred,Y_test)
+
+for i in range(len(y_pred)):
+  if (y_pred[i] != Y_test[i]):
+    image = X_test[i]
+    #print(X_test[i])
