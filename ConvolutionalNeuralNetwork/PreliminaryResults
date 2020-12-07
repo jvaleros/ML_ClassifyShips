@@ -1,0 +1,41 @@
+(4000, 19200)
+(2680, 80, 80, 3)
+Epoch 1/18
+67/67 - 37s - loss: 0.4953 - accuracy: 0.8741 - val_loss: 2.4923 - val_accuracy: 0.8862
+Epoch 2/18
+67/67 - 37s - loss: 0.1984 - accuracy: 0.9389 - val_loss: 0.1323 - val_accuracy: 0.9590
+Epoch 3/18
+67/67 - 38s - loss: 0.1204 - accuracy: 0.9604 - val_loss: 0.1554 - val_accuracy: 0.9440
+Epoch 4/18
+67/67 - 39s - loss: 0.0840 - accuracy: 0.9720 - val_loss: 0.1496 - val_accuracy: 0.9590
+Epoch 5/18
+67/67 - 39s - loss: 0.0658 - accuracy: 0.9753 - val_loss: 0.0419 - val_accuracy: 0.9907
+Epoch 6/18
+67/67 - 40s - loss: 0.0845 - accuracy: 0.9715 - val_loss: 0.0828 - val_accuracy: 0.9757
+Epoch 7/18
+67/67 - 39s - loss: 0.0781 - accuracy: 0.9739 - val_loss: 0.5934 - val_accuracy: 0.9086
+Epoch 8/18
+67/67 - 39s - loss: 0.0374 - accuracy: 0.9883 - val_loss: 0.0479 - val_accuracy: 0.9888
+Epoch 9/18
+67/67 - 39s - loss: 0.0503 - accuracy: 0.9818 - val_loss: 0.0664 - val_accuracy: 0.9720
+Epoch 10/18
+67/67 - 40s - loss: 0.0385 - accuracy: 0.9883 - val_loss: 0.0468 - val_accuracy: 0.9888
+Epoch 11/18
+67/67 - 38s - loss: 0.0324 - accuracy: 0.9893 - val_loss: 0.4608 - val_accuracy: 0.9198
+Epoch 12/18
+67/67 - 38s - loss: 0.0170 - accuracy: 0.9949 - val_loss: 0.0338 - val_accuracy: 0.9869
+Epoch 13/18
+67/67 - 40s - loss: 0.0076 - accuracy: 0.9972 - val_loss: 0.1169 - val_accuracy: 0.9757
+Epoch 14/18
+67/67 - 39s - loss: 0.0216 - accuracy: 0.9907 - val_loss: 0.0420 - val_accuracy: 0.9907
+Epoch 15/18
+67/67 - 43s - loss: 0.0324 - accuracy: 0.9897 - val_loss: 0.0235 - val_accuracy: 0.9925
+Epoch 16/18
+67/67 - 38s - loss: 0.0220 - accuracy: 0.9949 - val_loss: 0.0505 - val_accuracy: 0.9795
+Epoch 17/18
+67/67 - 38s - loss: 0.0216 - accuracy: 0.9939 - val_loss: 0.0543 - val_accuracy: 0.9907
+Epoch 18/18
+67/67 - 38s - loss: 0.0085 - accuracy: 0.9972 - val_loss: 0.0728 - val_accuracy: 0.9832
+
+<tensorflow.python.keras.callbacks.History at 0x7f9ef9b18f60>
+
