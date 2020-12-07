@@ -10,31 +10,48 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
 
+from keras.applications.vgg19 import VGG19
+from keras.preprocessing import image
+from keras.applications.vgg19 import preprocess_input
+from keras.models import Model
+import numpy as np
+
 # Open Data Set
 
-file = open('data/shipsnet.json')
+file = open('/content/drive/MyDrive/shipsnet.json')
 data = json.load(file)
 file.close()
+
+
+base_model = VGG19(weights="imagenet", include_top=False,input_shape=(80,80,3))
+model = Model(inputs=base_model.input,outputs=base_model.get_layer('block4_pool').output)
 
 Shipsnet= pd.DataFrame(data)
 X = np.asarray(data['data']).astype('uint8')
 Y = data['labels'] 
+
+X = X / 255.
+X = X.reshape([-1, 3, 80, 80]).transpose([0,2,3,1])
+
+# get the features 
+features = model.predict(X)
+
+pretrained = np.asarray(features[:,0,0])
+pretrained.shape
+#print(pretrained)
 #print(Shipsnet.head())
 #print(Shipsnet.shape)
 #Shipsnet['labels'].value_counts()
 
-# Separate Data into Training and Testing samples
+X_train,X_test,Y_train,Y_test = train_test_split(pretrained,Y,test_size = 0.3)
 
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.3)
-
-# X_train = preprocessing.scale(X_train)
+#X_train = preprocessing.scale(X_train)
 logreg = LogisticRegression(max_iter=100000)
 logreg.fit(X_train, Y_train)
 
-
 # Evaluation and Performance of ML Model
-
-yHat = sum(logreg.predict(X_test))/len(X_test)
+y_pred = logreg.predict(X_test)
+yHat = sum(y_pred)/len(X_test)
 score = logreg.score(X_test,Y_test)
 print('Results for Logistic Regression')
 YtestDiff = np.abs(yHat - Y_test)
@@ -55,4 +72,4 @@ def func_calConfusionMatrix(predY, trueY):
     print('Recall :', recall)
     return accuracy,precisiontn,precisiontp, recall
 
-func_calConfusionMatrix(logreg.predict(X_test),Y_test)
+func_calConfusionMatrix(y_pred,Y_test)
