@@ -163,13 +163,13 @@ class CNN_model:
             shuffle=True,
             verbose=2)
 
-        y_pred = model.predict(x_test)
+        y_pred = model.predict(x_validation)
 
         y_pred = [np.argmax(pred) for pred in y_pred] 
 
         print()
         print()
-        conf_matrix, accuracy, recall_array, precision_array = func_confusion_matrix(y_test, y_pred)
+        conf_matrix, accuracy, recall_array, precision_array = func_confusion_matrix(y_validation, y_pred)
         print("Confusion Matrix: ")
         print(conf_matrix)
         print("Average Accuracy: {}".format(accuracy))
