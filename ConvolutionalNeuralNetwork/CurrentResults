@@ -1,5 +1,3 @@
-hi
-
 DOING ACTIVATIONS
 Epoch 1/5
 67/67 - 35s - loss: 0.7102 - accuracy: 0.8484 - val_loss: 19.6797 - val_accuracy: 0.8004
@@ -209,3 +207,13 @@ Epoch 1/5
 Epoch 2/5
 67/67 - 35s - loss: 0.3164 - accuracy: 0.9156 - val_loss: 0.0736 - val_accuracy: 0.9701
 Epoch 3/5
+67/67 - 35s - loss: 0.1801 - accuracy: 0.9454 - val_loss: 0.1860 - val_accuracy: 0.9384
+Epoch 4/5
+67/67 - 35s - loss: 0.1195 - accuracy: 0.9590 - val_loss: 0.0886 - val_accuracy: 0.9701
+Epoch 5/5
+67/67 - 35s - loss: 0.1041 - accuracy: 0.9678 - val_loss: 0.1172 - val_accuracy: 0.9534
+
+
+END OF RESULTS FOR batch =  32
+Epoch 1/5
+
