@@ -1,3 +1,5 @@
+hi
+
 DOING ACTIVATIONS
 Epoch 1/5
 67/67 - 35s - loss: 0.7102 - accuracy: 0.8484 - val_loss: 19.6797 - val_accuracy: 0.8004
@@ -216,4 +218,54 @@ Epoch 5/5
 
 END OF RESULTS FOR batch =  32
 Epoch 1/5
+67/67 - 35s - loss: 0.8628 - accuracy: 0.8218 - val_loss: 19.2454 - val_accuracy: 0.7761
+Epoch 2/5
+67/67 - 35s - loss: 0.2853 - accuracy: 0.9230 - val_loss: 0.1067 - val_accuracy: 0.9534
+Epoch 3/5
+67/67 - 35s - loss: 0.1648 - accuracy: 0.9445 - val_loss: 0.3094 - val_accuracy: 0.9422
+Epoch 4/5
+67/67 - 35s - loss: 0.1185 - accuracy: 0.9510 - val_loss: 0.2887 - val_accuracy: 0.9328
+Epoch 5/5
+67/67 - 35s - loss: 0.0993 - accuracy: 0.9706 - val_loss: 0.0632 - val_accuracy: 0.9795
 
+
+END OF RESULTS FOR batch =  64
+Epoch 1/5
+67/67 - 35s - loss: 0.7761 - accuracy: 0.8451 - val_loss: 1.4182 - val_accuracy: 0.8937
+Epoch 2/5
+67/67 - 35s - loss: 0.3336 - accuracy: 0.9240 - val_loss: 0.1719 - val_accuracy: 0.9534
+Epoch 3/5
+67/67 - 35s - loss: 0.1585 - accuracy: 0.9468 - val_loss: 0.2014 - val_accuracy: 0.9384
+Epoch 4/5
+67/67 - 35s - loss: 0.1250 - accuracy: 0.9613 - val_loss: 0.0923 - val_accuracy: 0.9739
+Epoch 5/5
+67/67 - 35s - loss: 0.0948 - accuracy: 0.9701 - val_loss: 0.0582 - val_accuracy: 0.9776
+
+
+END OF RESULTS FOR batch =  128
+Epoch 1/5
+67/67 - 35s - loss: 0.8955 - accuracy: 0.8312 - val_loss: 2.6526 - val_accuracy: 0.7015
+Epoch 2/5
+67/67 - 35s - loss: 0.3842 - accuracy: 0.9007 - val_loss: 0.5695 - val_accuracy: 0.9142
+Epoch 3/5
+67/67 - 35s - loss: 0.2028 - accuracy: 0.9380 - val_loss: 0.7619 - val_accuracy: 0.8769
+Epoch 4/5
+67/67 - 35s - loss: 0.1248 - accuracy: 0.9510 - val_loss: 0.1393 - val_accuracy: 0.9534
+Epoch 5/5
+67/67 - 35s - loss: 0.1156 - accuracy: 0.9674 - val_loss: 0.1301 - val_accuracy: 0.9478
+
+
+END OF RESULTS FOR batch =  256
+
+---------------------------------------------------------------------------
+
+AttributeError                            Traceback (most recent call last)
+
+<ipython-input-5-211cb8ae2c91> in <module>()
+    238 
+    239 
+--> 240 y_pred = model.predict(x_test)
+    241 
+    242 y_pred = [np.argmax(pred) for pred in y_pred]
+
+AttributeError: 'CNN_model' object has no attribute 'predict'
