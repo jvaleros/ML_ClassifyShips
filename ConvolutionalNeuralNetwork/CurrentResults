@@ -1,3 +1,5 @@
+hi
+
 DOING ACTIVATIONS
 Epoch 1/5
 67/67 - 35s - loss: 0.7102 - accuracy: 0.8484 - val_loss: 19.6797 - val_accuracy: 0.8004
@@ -151,4 +153,59 @@ END OF RESULTS FOR dropout =  0.4
 Epoch 1/5
 67/67 - 35s - loss: 0.7798 - accuracy: 0.8386 - val_loss: 0.8624 - val_accuracy: 0.9142
 Epoch 2/5
+67/67 - 35s - loss: 0.2786 - accuracy: 0.9338 - val_loss: 0.5143 - val_accuracy: 0.9310
+Epoch 3/5
+67/67 - 35s - loss: 0.1518 - accuracy: 0.9543 - val_loss: 0.1234 - val_accuracy: 0.9552
+Epoch 4/5
+67/67 - 35s - loss: 0.1223 - accuracy: 0.9599 - val_loss: 1.0316 - val_accuracy: 0.8937
+Epoch 5/5
+67/67 - 35s - loss: 0.0950 - accuracy: 0.9678 - val_loss: 0.1035 - val_accuracy: 0.9664
 
+
+END OF RESULTS FOR dropout =  0.5
+Epoch 1/5
+67/67 - 35s - loss: 1.0337 - accuracy: 0.8134 - val_loss: 5.0472 - val_accuracy: 0.8451
+Epoch 2/5
+67/67 - 35s - loss: 0.4101 - accuracy: 0.9062 - val_loss: 0.1132 - val_accuracy: 0.9608
+Epoch 3/5
+67/67 - 35s - loss: 0.1588 - accuracy: 0.9431 - val_loss: 0.0846 - val_accuracy: 0.9776
+Epoch 4/5
+67/67 - 35s - loss: 0.1432 - accuracy: 0.9468 - val_loss: 0.0735 - val_accuracy: 0.9701
+Epoch 5/5
+67/67 - 35s - loss: 0.1046 - accuracy: 0.9618 - val_loss: 0.0737 - val_accuracy: 0.9776
+
+
+END OF RESULTS FOR dropout =  0.6
+Epoch 1/5
+67/67 - 35s - loss: 1.3357 - accuracy: 0.7840 - val_loss: 29.2469 - val_accuracy: 0.7780
+Epoch 2/5
+67/67 - 35s - loss: 0.4938 - accuracy: 0.8792 - val_loss: 0.2783 - val_accuracy: 0.8881
+Epoch 3/5
+67/67 - 35s - loss: 0.1918 - accuracy: 0.9347 - val_loss: 0.1244 - val_accuracy: 0.9440
+Epoch 4/5
+67/67 - 35s - loss: 0.1333 - accuracy: 0.9468 - val_loss: 0.1095 - val_accuracy: 0.9534
+Epoch 5/5
+67/67 - 35s - loss: 0.1342 - accuracy: 0.9468 - val_loss: 0.1769 - val_accuracy: 0.9216
+
+
+END OF RESULTS FOR dropout =  0.7
+Epoch 1/5
+67/67 - 35s - loss: 1.7680 - accuracy: 0.7705 - val_loss: 1.5466 - val_accuracy: 0.8563
+Epoch 2/5
+67/67 - 35s - loss: 0.7786 - accuracy: 0.8340 - val_loss: 0.2076 - val_accuracy: 0.9160
+Epoch 3/5
+67/67 - 35s - loss: 0.2681 - accuracy: 0.8918 - val_loss: 0.2766 - val_accuracy: 0.8731
+Epoch 4/5
+67/67 - 35s - loss: 0.2168 - accuracy: 0.9174 - val_loss: 0.2036 - val_accuracy: 0.9272
+Epoch 5/5
+67/67 - 35s - loss: 0.1969 - accuracy: 0.9207 - val_loss: 0.1448 - val_accuracy: 0.9496
+
+
+END OF RESULTS FOR dropout =  0.8
+
+DOING batch size
+Epoch 1/5
+67/67 - 35s - loss: 0.6850 - accuracy: 0.8405 - val_loss: 2.2616 - val_accuracy: 0.8843
+Epoch 2/5
+67/67 - 35s - loss: 0.3164 - accuracy: 0.9156 - val_loss: 0.0736 - val_accuracy: 0.9701
+Epoch 3/5
