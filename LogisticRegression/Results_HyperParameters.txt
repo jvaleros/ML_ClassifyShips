@@ -1,0 +1,87 @@
+Trial 1 (with Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='sag')
+Results for Logistic Regression
+average error: 0.3287208333333333 (0.29274131044960156)
+[[903   0]
+ [104 193]]
+Accuracy : 0.9133333333333333
+Class 0 Precision : 1.0
+Class 1 Precision : 0.6498316498316499
+Recall : 0.6498316498316499
+
+Trial 1 (without Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='sag')
+Results for Logistic Regression
+average error: 0.3690986111111111 (0.21980791803618976)
+[[906   1]
+ [  1 292]]
+Accuracy : 0.9983333333333333
+Class 0 Precision : 0.9988974641675854
+Class 1 Precision : 0.9965870307167235
+Recall : 0.9965870307167235
+
+Trial 2 (with Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='newton-cg')
+The line search algorithm did not converge
+Results for Logistic Regression
+average error: 0.3448000000000001 (0.27984452826524947)
+[[891   0]
+ [ 93 216]]
+Accuracy : 0.9225
+Class 0 Precision : 1.0
+Class 1 Precision : 0.6990291262135923
+Recall : 0.6990291262135923
+
+Trial 2 (without Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='newton-cg')
+
+Results for Logistic Regression
+average error: 0.37624722222222234 (0.216262058091709)
+[[897   1]
+ [  2 300]]
+Accuracy : 0.9975
+Class 0 Precision : 0.9988864142538976
+Class 1 Precision : 0.9933774834437086
+Recall : 0.9933774834437086
+
+Trial 3 (with Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='liblinear')
+
+Results for Logistic Regression
+average error: 0.35167499999999996 (0.25016738826789103)
+[[906   0]
+ [ 43 251]]
+Accuracy : 0.9641666666666666
+Class 0 Precision : 1.0
+Class 1 Precision : 0.8537414965986394
+Recall : 0.8537414965986394
+
+Trial 3 (without Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='liblinear')
+
+Results for Logistic Regression
+average error: 0.38238749999999994 (0.21206968157600933)
+[[889   2]
+ [  2 307]]
+Accuracy : 0.9966666666666667
+Class 0 Precision : 0.9977553310886644
+Class 1 Precision : 0.9935275080906149
+Recall : 0.9935275080906149
+
+Trial 4 (with Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='lbfgs')
+
+Results for Logistic Regression
+average error: 0.3429166666666667 (0.27207631435561114)
+[[900   0]
+ [ 77 223]]
+Accuracy : 0.9358333333333333
+Class 0 Precision : 1.0
+Class 1 Precision : 0.7433333333333333
+Recall : 0.7433333333333333
+
+Trial 4 (without Noise): Hyper Parameters are (max_iter=10000,fit_intercept=True,solver='lbfgs')
+
+Results for Logistic Regression
+average error: 0.37079999999999996 (0.21791084823334925)
+[[904   2]
+ [  0 294]]
+Accuracy : 0.9983333333333333
+Class 0 Precision : 0.9977924944812362
+Class 1 Precision : 1.0
+Recall : 1.0
+
+
