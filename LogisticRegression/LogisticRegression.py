@@ -1,4 +1,4 @@
-# Data Extraction code, from Akshay Mewada, Kaggle
+# Data Extraction code from Akshay Mewada, Kaggle (This is just for data setup)
 # AUTHOR: Jaime Valero Solesio
 # CS 596 Machine Learning Project: Binary Classification before/after Noise Introduction
 # Fall 2020
