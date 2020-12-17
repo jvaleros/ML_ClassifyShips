@@ -10,7 +10,7 @@ Here is a summary of the performance of the LR model on this dataset:
 
 | Accuracy | Average Error | Class 0 Precision | Class 1 Precision | Recall |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
-| 0.88 | 0.407279 | 0.886389 | 0.861736 | 0.861736 |
+| To be Updated in the future | To be Updated in the future | To be Updated in the future | To be Updated in the future | To be Updated in the future |
 
 ### SVM
 ## Authors
