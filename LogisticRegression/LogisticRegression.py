@@ -37,10 +37,10 @@ Y = data['labels']
 
 X = X / 255.
 
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.2)
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.25)
 
 # Split training samples into training and validation (20% Validation)
-train_fraction = 0.9
+train_fraction = 0.85
 split_point = int(train_fraction * len(X_train))
 trainX = X_train[0:split_point]
 X_valid = X_train[split_point:]
