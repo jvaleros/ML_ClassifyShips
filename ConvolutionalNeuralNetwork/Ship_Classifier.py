@@ -17,10 +17,19 @@ import json
 from builtins import set
 
 
+"""
+The below path is how I accessed the data.
+"""
+# with open("C:\\Users\\Sean\\eclipse-workspace\\CS596_FP\\shipsnet.json", 'r') as f:
+#     data = json.load(f)
 
-with open("C:\\Users\\Sean\\eclipse-workspace\\CS596_FP\\shipsnet.json", 'r') as f:
-    data = json.load(f)
-    
+"""
+PLEASE READ
+USE THE APPROPRIATE PATH IN ORDER TO OBTAIN DATA FROM JSON FILE
+"""
+
+with open("shipsnet.json", 'r') as f:
+    data = json.load(f)    
     
 x = np.array(data['data']).astype('uint8')
 y = np.array(data['labels']).astype('uint8')
@@ -195,65 +204,65 @@ class CNN_model:
 The following loops are meant to test the hyper parameters
 """
  
-# print()
-# print("DOING ACTIVATIONS")
-# activations = ['relu', 'softmax', 'sigmoid']
-# cnt = 0
-# for act in activations:
-#     model = CNN_model( (80,80,3), num_classes = 2, activation = act)
-#     print("END OF RESULTS FOR activation = ", activations[cnt])
-#     print()
-#     cnt += 1
-#  
-# print()
-# print("DOING Learning rate")
-# lr_arr = [0.01, 0.02, 0.03, 0.04, 0.05]
-#   
-# cnt = 0
-# for lr in lr_arr:
-#     model = CNN_model( (80,80,3), num_classes = 2, lr = lr)
-#     print("END OF RESULTS FOR lr = ", lr_arr[cnt])
-#     cnt += 1
-#   
-# print()
-# print("DOING padding")
-# pad_arr = ["same", "valid"]
-#   
-#   
-# cnt = 0
-# for p in pad_arr:
-#     model = CNN_model( (80,80,3), num_classes = 2, pad = p)
-#     print("END OF RESULTS FOR padding = ", pad_arr[cnt])
-#     cnt += 1       
-#   
-# print()
-# print("DOING dropout rate")
-# do_arr = [0.4, 0.5, 0.6, 0.7, 0.8]
-#   
-# cnt = 0
-# for dr in do_arr:
-#     model = CNN_model( (80,80,3), num_classes = 2,  dropout = dr)
-#     print("END OF RESULTS FOR dropout = ", do_arr[cnt])
-#     cnt += 1   
-#        
-# print()
-# print("DOING batch size")
-# b_arr = [32, 64, 128, 256]
-#   
-# cnt = 0
-# for b in b_arr:
-#     model = CNN_model( (80,80,3), num_classes = 2,  batch = b)
-#     print("END OF RESULTS FOR batch = ", b_arr[cnt])
-#     cnt += 1      
-#  
-# print()
-# print("DOING Kernel Size") 
-# n_arr = [32, 64, 128]  
-# cnt = 0
-# for b in n_arr:
-#     model = CNN_model( (80,80,3), num_classes = 2,  neurons = b)
-#     print("END OF RESULTS FOR batch = ", n_arr[cnt])
-#     cnt += 1   
+print()
+print("DOING ACTIVATIONS")
+activations = ['relu', 'softmax', 'sigmoid']
+cnt = 0
+for act in activations:
+    model = CNN_model( (80,80,3), num_classes = 2, activation = act)
+    print("END OF RESULTS FOR activation = ", activations[cnt])
+    print()
+    cnt += 1
+  
+print()
+print("DOING Learning rate")
+lr_arr = [0.01, 0.02, 0.03, 0.04, 0.05]
+   
+cnt = 0
+for lr in lr_arr:
+    model = CNN_model( (80,80,3), num_classes = 2, lr = lr)
+    print("END OF RESULTS FOR lr = ", lr_arr[cnt])
+    cnt += 1
+   
+print()
+print("DOING padding")
+pad_arr = ["same", "valid"]
+   
+   
+cnt = 0
+for p in pad_arr:
+    model = CNN_model( (80,80,3), num_classes = 2, pad = p)
+    print("END OF RESULTS FOR padding = ", pad_arr[cnt])
+    cnt += 1       
+   
+print()
+print("DOING dropout rate")
+do_arr = [0.4, 0.5, 0.6, 0.7, 0.8]
+   
+cnt = 0
+for dr in do_arr:
+    model = CNN_model( (80,80,3), num_classes = 2,  dropout = dr)
+    print("END OF RESULTS FOR dropout = ", do_arr[cnt])
+    cnt += 1   
+        
+print()
+print("DOING batch size")
+b_arr = [32, 64, 128, 256]
+   
+cnt = 0
+for b in b_arr:
+    model = CNN_model( (80,80,3), num_classes = 2,  batch = b)
+    print("END OF RESULTS FOR batch = ", b_arr[cnt])
+    cnt += 1      
+  
+print()
+print("DOING Kernel Size") 
+n_arr = [32, 64, 128]  
+cnt = 0
+for b in n_arr:
+    model = CNN_model( (80,80,3), num_classes = 2,  neurons = b)
+    print("END OF RESULTS FOR batch = ", n_arr[cnt])
+    cnt += 1   
      
 """
 End of hyperparameter testing
