@@ -22,7 +22,10 @@ from skimage.util import random_noise
 
 # Open Data Set
 
-file = open('/content/drive/MyDrive/shipsnet.json')
+#path used by Jaime
+#file = open('/content/drive/MyDrive/shipsnet.json') 
+#PLEASE USE YOUR OWN PATH
+file = open('shipsnet.json')
 data = json.load(file)
 file.close()
 
