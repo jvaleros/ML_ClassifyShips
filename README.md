@@ -6,14 +6,10 @@
 ## Machine Learning Models
 ### CNN
 ### Logistic Regression(LR)
-Here is a summary of the performance of the LR model on this dataset:
-
-| Accuracy | Average Error | Class 0 Precision | Class 1 Precision | Recall |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| To be Updated in the future | To be Updated in the future | To be Updated in the future | To be Updated in the future | To be Updated in the future |
-
 ### SVM
 ## Authors
 Max Ramacher \
 Sean Tonthat \
 Jaime Valero 
+
+## Please Check that path to shipsnet.json is correct for files
