@@ -4,7 +4,8 @@
  
 ## Dataset
 ![Samples Images from Dataset](https://github.com/jvaleros/ML_ClassifyShips/blob/main/images/ShipsSampleImage.png)
- The dataset we are using is located at [Kaggle Ships in Satellite Imagery](https://www.kaggle.com/rhammell/ships-in-satellite-imagery). This dataset contains 4000 png files, with the same resolution. Moreover, to simplify processing, the dataset contains a JSON file with data and the ground truth labels for each image in the set.
+ The dataset we are using is located at [Kaggle Ships in Satellite Imagery](https://www.kaggle.com/rhammell/ships-in-satellite-imagery). 
+ This dataset contains 4000 png files, with the same resolution. Moreover, to simplify processing, the dataset contains a JSON file with data and the ground truth labels for each image in the set.
 ## Machine Learning Models
 ### CNN
 Highest accuracy model on test data had hyperparameters: Activation = ‘relu’, Lr = 0.02, 
